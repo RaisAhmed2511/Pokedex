@@ -11,8 +11,8 @@ export class AccueilComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  scroll(el: HTMLElement) {
-    el.scrollIntoView();
+  scroll(element: HTMLElement) {
+    element.scrollIntoView();
 }
 
 }
