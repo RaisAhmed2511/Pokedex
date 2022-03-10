@@ -1,6 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { PokemonComponent } from '../pokemon/pokemon.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+      imports: [
+         FormsModule,
+         ReactiveFormsModule
+      ]
 
 @Component({
   selector: 'app-pokedex',
@@ -9,6 +15,7 @@ import { PokemonComponent } from '../pokemon/pokemon.component';
 })
 export class PokedexComponent implements OnInit {
 
+  pokemonRecherche : string = '';
   allData : Array<PokemonComponent> = [];
   pokemonApiUrl = '';
   nombre = 1;
@@ -17,7 +24,6 @@ export class PokedexComponent implements OnInit {
     this.pokemonApiUrl = 'https://pure-stream-21702.herokuapp.com/api/pokemons?page=1';
       this.readApi(this.pokemonApiUrl)
       .subscribe((data : any) => {
-          
           for(let i = 0; i < 20; i++){
             this.allData[i] = new PokemonComponent();
             this.allData[i].initialiser(data['data'][i]['id'], data['data'][i]['name'], data['data'][i]['type_1'])
@@ -55,7 +61,11 @@ export class PokedexComponent implements OnInit {
         this.pokemonData.type1 = data['type_1']*/
       });
     }
+
+    
   }
 
+
+  
 
 }
