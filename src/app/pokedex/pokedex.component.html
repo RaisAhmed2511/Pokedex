@@ -4,7 +4,7 @@
 
 
 <ul>
-  <li *ngFor="let pokemon of allData">
+  <li *ngFor="let pokemon of allData" (click)="infos(pokemon)">
       <span>ID : {{pokemon.pokemonData.id}}, </span>
       <span>Nom : {{pokemon.pokemonData.nom}}, </span>
       <span>Type 1 : {{pokemon.pokemonData.type1}}</span>
