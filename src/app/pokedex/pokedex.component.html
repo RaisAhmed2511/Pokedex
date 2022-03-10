@@ -1,0 +1,13 @@
+<h2>Pokédex</h2>
+<button (click)="page(-1)" class="switch" id="button_left"> &#60; </button>
+<button (click)="page(1)" class="switch" id="button_right"> &#62; </button>
+
+
+<ul>
+  <li *ngFor="let pokemon of allData" (click)="infos(pokemon)">
+      <span>ID : {{pokemon.pokemonData.id}}, </span>
+      <span>Nom : {{pokemon.pokemonData.nom}}, </span>
+      <span>Type 1 : {{pokemon.pokemonData.type1}}</span>
+  </li>
+</ul>
+

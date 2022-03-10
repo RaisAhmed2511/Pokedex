@@ -1,0 +1,20 @@
+.mat-toolbar {
+    position: absolute;
+    /* overflow : hidden; */
+    background: linear-gradient(#fb5283,#ff3527);
+    color: #fff;
+    top : 0;
+    left: 0;
+    height: 50px;
+    z-index:5;
+ }
+
+ .spacer{
+     flex : 1 1 auto; 
+ }
+.choice {
+    margin-left:30px;
+}
+.logo{
+    width: 20px;
+}
