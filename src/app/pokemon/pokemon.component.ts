@@ -8,31 +8,23 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PokemonComponent implements OnInit {
 
-  pokemonApiUrl = '';
   pokemonData = {
     id: 0,
     nom: '',
     type1: ''
   };
 
-  constructor(public http : HttpClient) {
-    for(let i = 1; i < 10; i++){
-      this.pokemonApiUrl = 'https://pure-stream-21702.herokuapp.com/api/pokemon/' + i;
-      this.readApi(this.pokemonApiUrl)
-      .subscribe((data : any) => {
-        this.pokemonData.id = data['id'];
-        this.pokemonData.nom = data['name'];
-        this.pokemonData.type1 = data['type_1']
-      });
-    }
-    
+  constructor() {
    }
 
   ngOnInit(): void {
   }
 
-  readApi(URL : string){
-    return this.http.get(URL);
+  initialiser(id : number, nom : string, type1 : string){
+    this.pokemonData.id = id;
+    this.pokemonData.nom = nom;
+    this.pokemonData.type1 = type1;
   }
+
 
 }

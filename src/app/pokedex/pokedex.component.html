@@ -2,10 +2,12 @@
 
 <h2>Pokémons</h2>
 <ul>
-  <li *ngFor="let pokemon of pokemons">
-      <span>{{pokemonData.id}}</span>
-      <span>{{pokemonData.nom}}</span>
-      <span>{{pokemonData.type1}}</span>
+  <button (click)="page(-1)"> &#60; </button>
+  <button (click)="page(1)"> &#62; </button>
+  <li *ngFor="let pokemon of allData">
+      <span>ID : {{pokemon.pokemonData.id}}, </span>
+      <span>Nom : {{pokemon.pokemonData.nom}}, </span>
+      <span>Type 1 : {{pokemon.pokemonData.type1}}</span>
   </li>
 </ul>
 
