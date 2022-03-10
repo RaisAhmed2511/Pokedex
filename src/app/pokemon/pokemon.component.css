@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Questrial";
+    src: url("src/assets/Questrial-Regular.ttf");
+  }
+
+
+::ng-deep .custom-modalbox{
+    text-align: center;
+    font-family: 'Questrial';
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.stats{
+    display: inline-block;
+    margin: 10px;
+    padding: 0.3rem 3.4rem;
+    border: 3px solid black;
+    box-shadow: 8px 8px 0 black;
+}
+
+#id{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+    font-style: italic;
+    display: inline-block;
+}
+
+#pv{
+    padding: 15px;
+    display: inline-block;
+    border: 3px solid rgb(113, 177, 163);
+    box-shadow: 8px 8px 0 rgb(113, 177, 163);
+}
+
+#nom{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.type{
+    font-size: 20px;
+    transform: skewX(-20deg);
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border: 3px solid rgb(129, 93, 101);
+    box-shadow: 8px 8px 0 rgb(129, 93, 101);
+}
+
+#les_types{
+    margin: 20px;
+}
+
+#un{
+    padding: 10px;
+}
+
