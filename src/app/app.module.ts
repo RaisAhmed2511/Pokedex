@@ -12,12 +12,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MatToolbarModule } from '@angular/material/toolbar'; 
+import { MatButtonModule } from '@angular/material/button'; 
+import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
     PokedexComponent,
     PokemonComponent,
-    AccueilComponent
+    AccueilComponent,
+    NavbarComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     ReactiveFormsModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],
