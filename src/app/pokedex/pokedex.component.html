@@ -1,9 +1,9 @@
-<p>pokedex works!</p>
-
 <h2>Pokémons</h2>
+<button (click)="page(-1)" class="switch" id="button_left"> &#60; </button>
+<button (click)="page(1)" class="switch" id="button_right"> &#62; </button>
+
+
 <ul>
-  <button (click)="page(-1)"> &#60; </button>
-  <button (click)="page(1)"> &#62; </button>
   <li *ngFor="let pokemon of allData">
       <span>ID : {{pokemon.pokemonData.id}}, </span>
       <span>Nom : {{pokemon.pokemonData.nom}}, </span>
