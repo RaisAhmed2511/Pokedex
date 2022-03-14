@@ -1,0 +1,9 @@
+.footer{
+    position:absolute;
+    background: linear-gradient(#fb5283,#ff3527);
+    width: 100%;
+}
+
+.footer p {
+    text-align: center;
+}

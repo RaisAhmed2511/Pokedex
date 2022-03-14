@@ -15,13 +15,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { MatButtonModule } from '@angular/material/button'; 
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     PokedexComponent,
     PokemonComponent,
     AccueilComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
     
   ],
   imports: [
