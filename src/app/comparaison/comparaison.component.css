@@ -1,3 +1,10 @@
+.partage{
+    display: inline-block;
+    width: 49%;
+    float: left;
+}
+
+
 h2{
     margin-top: 80px;
     display: block;
@@ -70,6 +77,21 @@ li:hover{
     transition: 0.2s;
 }
 
+.infos{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.green{
+    color: rgb(42, 122, 42);
+}
+
+.red{
+    color: #fb5283;
+}
 
 
 

@@ -15,13 +15,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { MatButtonModule } from '@angular/material/button'; 
 import { NavbarComponent } from './navbar/navbar.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { ComparaisonComponent } from './comparaison/comparaison.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     PokedexComponent,
     PokemonComponent,
     AccueilComponent,
-    NavbarComponent
+    NavbarComponent,
+    ComparaisonComponent
     
   ],
   imports: [
@@ -33,7 +37,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatDialogModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent],

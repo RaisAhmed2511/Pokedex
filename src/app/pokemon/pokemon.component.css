@@ -29,10 +29,11 @@
 }
 
 #pv{
-    padding: 15px;
+    font-size: 20px;
     display: inline-block;
-    border: 3px solid rgb(113, 177, 163);
-    box-shadow: 8px 8px 0 rgb(113, 177, 163);
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(19, 134, 96);
 }
 
 #nom{
@@ -48,8 +49,8 @@
     display: inline-block;
     margin: 5px;
     padding: 5px;
-    border: 3px solid rgb(129, 93, 101);
-    box-shadow: 8px 8px 0 rgb(129, 93, 101);
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 8px 8px 0 rgb(0, 0, 0);
 }
 
 #les_types{
@@ -60,3 +61,12 @@
     padding: 10px;
 }
 
+.titre{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#leg{
+    display: block;
+}
