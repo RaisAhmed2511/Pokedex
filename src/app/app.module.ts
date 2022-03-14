@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { MatButtonModule } from '@angular/material/button'; 
 import { NavbarComponent } from './navbar/navbar.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { ComparaisonComponent } from './comparaison/comparaison.component';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
@@ -24,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
     PokemonComponent,
     AccueilComponent,
     NavbarComponent,
+    ComparaisonComponent,
     FooterComponent
     
   ],
@@ -36,7 +39,8 @@ import { FooterComponent } from './footer/footer.component';
     MatDialogModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent],

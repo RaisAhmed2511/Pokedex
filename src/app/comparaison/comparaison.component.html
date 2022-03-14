@@ -1,0 +1,67 @@
+<div id="tout">
+    <h2>Comparaison</h2>
+    <div class="partage">
+        <button (click)="page1(-1)" class="switch" id="button_left"> &#60; </button>
+        <button (click)="page1(1)" class="switch" id="button_right"> &#62; </button>
+        <div class="search-box">
+            <input type="text" class="input-search" [(ngModel)]="searchText1" placeholder="Rechercher...">
+        </div>
+
+
+        <ul>
+        <li *ngFor="let pokemon of allData | filter:searchText1" (click)="infos1(pokemon)">
+            <span>Nom : {{pokemon.pokemonData.nom}}</span>
+        </li>
+        </ul>
+        <div class="infos">
+            <p *ngIf="pokemon1.pv > pokemon2.pv" class="green">PV : {{pokemon1.pv}}</p>
+            <p *ngIf="pokemon1.pv &#60; pokemon2.pv" class="red">PV : {{pokemon1.pv}}</p>
+            <p *ngIf="pokemon1.pv == pokemon2.pv">PV : {{pokemon1.pv}}</p>
+
+            <p *ngIf="pokemon1.attaque > pokemon2.attaque" class="green">Attaque : {{pokemon1.attaque}}</p>
+            <p *ngIf="pokemon1.attaque &#60; pokemon2.attaque" class="red">Attaque : {{pokemon1.attaque}}</p>
+            <p *ngIf="pokemon1.attaque == pokemon2.attaque">Attaque : {{pokemon1.attaque}}</p>
+
+            <p *ngIf="pokemon1.defense > pokemon2.defense" class="green">Defense : {{pokemon1.defense}}</p>
+            <p *ngIf="pokemon1.defense &#60; pokemon2.defense" class="red">Defense : {{pokemon1.defense}}</p>
+            <p *ngIf="pokemon1.defense == pokemon2.defense">Defense : {{pokemon1.defense}}</p>
+
+            <p *ngIf="pokemon1.vitesse > pokemon2.vitesse" class="green">Vitesse : {{pokemon1.vitesse}}</p>
+            <p *ngIf="pokemon1.vitesse &#60; pokemon2.vitesse" class="red">Vitesse : {{pokemon1.vitesse}}</p>
+            <p *ngIf="pokemon1.vitesse == pokemon2.vitesse">Vitesse : {{pokemon1.vitesse}}</p>
+        </div>
+        
+    </div>
+    <div class="partage">
+        <button (click)="page2(-1)" class="switch" id="button_left"> &#60; </button>
+        <button (click)="page2(1)" class="switch" id="button_right"> &#62; </button>
+        <div class="search-box">
+            <input type="text" class="input-search" [(ngModel)]="searchText2" placeholder="Rechercher...">
+        </div>
+
+
+        <ul>
+        <li *ngFor="let pokemon of allData2 | filter:searchText2" (click)="infos2(pokemon)">
+            <span>Nom : {{pokemon.pokemonData.nom}}</span>
+        </li>
+        </ul>
+        <div class="infos">
+            <p *ngIf="pokemon2.pv > pokemon1.pv" class="green">PV : {{pokemon2.pv}}</p>
+            <p *ngIf="pokemon2.pv &#60; pokemon1.pv" class="red">PV : {{pokemon2.pv}}</p>
+            <p *ngIf="pokemon2.pv == pokemon1.pv">PV : {{pokemon2.pv}}</p>
+
+            <p *ngIf="pokemon2.attaque > pokemon1.attaque" class="green">Attaque : {{pokemon2.attaque}}</p>
+            <p *ngIf="pokemon2.attaque &#60; pokemon1.attaque" class="red">Attaque : {{pokemon2.attaque}}</p>
+            <p *ngIf="pokemon2.attaque == pokemon1.attaque">Attaque : {{pokemon2.attaque}}</p>
+
+            <p *ngIf="pokemon2.defense > pokemon1.defense" class="green">Defense : {{pokemon2.defense}}</p>
+            <p *ngIf="pokemon2.defense &#60; pokemon1.defense" class="red">Defense : {{pokemon2.defense}}</p>
+            <p *ngIf="pokemon2.defense == pokemon1.defense">Defense : {{pokemon2.defense}}</p>
+
+            <p *ngIf="pokemon2.vitesse > pokemon1.vitesse" class="green">Vitesse : {{pokemon2.vitesse}}</p>
+            <p *ngIf="pokemon2.vitesse &#60; pokemon1.vitesse" class="red">Vitesse : {{pokemon2.vitesse}}</p>
+            <p *ngIf="pokemon2.vitesse == pokemon1.vitesse">Vitesse : {{pokemon2.vitesse}}</p>
+        </div>
+
+    </div>
+</div>
