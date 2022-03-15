@@ -12,9 +12,10 @@
 .div1 {
     padding-top: 2%;
     margin: auto;
-    border-bottom: 2px solid black;
+    border-bottom: 2px dashed black;
     width: 50%;
 }
 .footer h2 {
+    padding-top: 1%;
     text-align: center;
 }
