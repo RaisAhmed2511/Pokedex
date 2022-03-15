@@ -1,8 +1,8 @@
 .footer{
     background: linear-gradient(#fb5283,#ff3527);
     width: 100%;
-    overflow-x:hidden;
-    margin: 0;
+    overflow-x:hidden; 
+     margin: 0;
     padding: 0;
 }
 .footer h1{
@@ -10,12 +10,12 @@
     
 }
 .div1 {
-    padding-top: 2%;
+    /* padding-top: 2%; */
     margin: auto;
     border-bottom: 2px dashed black;
     width: 50%;
 }
 .footer h2 {
-    padding-top: 1%;
+    /* padding-top: 1%; */
     text-align: center;
 }
