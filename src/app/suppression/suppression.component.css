@@ -1,0 +1,72 @@
+#tout{
+    padding-top: 30px;
+    border: 3px solid black;
+    box-shadow: 15px 15px 0 black;
+    margin: 100px;
+}
+
+#nomCreer{
+    transform: skewX(-20deg);
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#submit{
+    transform: skewX(-20deg);
+    border: none;
+    background-color: none;
+    border: 3px solid black;
+    box-shadow: 8px 8px 0 rgb(0, 0, 0);
+    padding: 15px;
+}
+
+#submit:hover{
+    transition: 1s;
+    padding: 20px;
+}
+
+div{
+    text-align: center;
+}
+
+.champs{
+    margin: 40px;
+}
+
+.stats{
+    font-weight: bold;
+    transform: skewX(-20deg);
+}
+
+.legendaire{
+    font-weight: bold;
+    transform: skewX(-20deg);
+    margin: 20px;
+}
+
+#name{
+    width: 250px;
+}
+
+#type_1{
+    width: 80px;
+}
+
+#type_2{
+    width: 80px;
+}
+
+.stats label{
+    padding-left: 10px;
+}
+
+.stats input{
+    border: none;
+    border: 3px solid black;
+    width: 60px;
+    height: 30px;
+    margin: 10px;
+    box-shadow: 8px 8px 0 rgb(0, 0, 0);
+}
