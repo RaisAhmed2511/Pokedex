@@ -1,0 +1,38 @@
+<div class="txtAccueil">
+    <h1>Bienvenue sur le {{title}}</h1>
+    <p>Venez chercher, découvrir des pokémons de tous les horizons ! </p>
+    <button (click)="scroll(target)" class="button">Le {{title}} ?<img src="../../assets/Images/arrowRight.png" alt=""></button>
+</div>
+<div class="imgNextTxt">
+    <img class="pokedex" src="../../assets/Images/pokedex.png" alt="Pokedex">
+    <div class="colorBox"></div>
+</div>
+<div class="bandeUn"></div>
+<div class="bandeDeux"></div>
+<div  #target class="show">
+    <table class="tableau" >
+        <td class="tab" >
+            <tr><th>{{title}} </th></tr>
+            <tr><p>Sur le PokeSite vous pourrez retrouvez de nombreuses merveilleuses fonctionnalités en rapport avec le fantastique et immense univers de pokemon. 
+
+                En effet vous serez en mesure de rechercher n'importe quelle pokemon. Vous pourrez les filtrer en fonction de leur type, créer votre propre équipe pokemon (simulation) etc... 
+             
+                Ce site a donc été conçu afin de satisfaire les fans de l'univers Pokemon et de les aider à se retrouver parmis tous les pokemons. 
+            </p></tr>
+            <tr><img src="../../assets/Images/PokemonAttitude.jpg"></tr>
+        </td>
+        <td class = "tab">
+            <tr><th>Réalisation</th></tr>
+            <tr><p>Ce site a été réalisé en l'espace de 4 jours dans l'objectif de répondre au module techno Web.
+                Le but est de se familiariser avec de nouvelle technologie, à savoir le framework Angular.
+                Nous avons pu en ce cours laps de temps construire le {{title}} en binome. Si vous voulez en savoir plus à propos de nous, n'hésitez pas à vous rendre 
+                dans la section Nous Contacter afin d'obtenir plus d'information sur qui nous sommes et ce que nous faisons.
+            </p></tr>
+            <tr><img src="../../assets/Images/pokemon-go.jpg"></tr>
+        </td>
+        
+    </table>
+</div>
+
+
+
