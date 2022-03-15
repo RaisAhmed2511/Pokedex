@@ -2,6 +2,9 @@
     
     background: linear-gradient(#fb5283,#ff3527);
     width: 100%;
+    overflow-x:hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .footer p {
