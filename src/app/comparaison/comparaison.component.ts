@@ -23,7 +23,8 @@ export class ComparaisonComponent implements OnInit {
   pokemon1 : any = {nom : ""};
   pokemon2 : any = {nom : ""};
   pokemonApiUrl = '';
-  nombre = 1;
+  nombre1 = 1;
+  nombre2 = 1;
   searchText1:any;
   searchText2:any;
 
@@ -54,9 +55,9 @@ export class ComparaisonComponent implements OnInit {
   }
 
   page1(nombre : number){
-    if(this.nombre + nombre >= 1 && this.nombre + nombre <= 5){
-      this.nombre = this.nombre + nombre;
-      this.pokemonApiUrl = 'https://pure-stream-21702.herokuapp.com/api/pokemons?page=' + this.nombre;
+    if(this.nombre1 + nombre >= 1 && this.nombre1 + nombre <= 40){
+      this.nombre1 = this.nombre1 + nombre;
+      this.pokemonApiUrl = 'https://pure-stream-21702.herokuapp.com/api/pokemons?page=' + this.nombre1;
       this.readApi(this.pokemonApiUrl)
       .subscribe((data : any) => {
           
@@ -73,9 +74,9 @@ export class ComparaisonComponent implements OnInit {
   }
 
   page2(nombre : number){
-    if(this.nombre + nombre >= 1 && this.nombre + nombre <= 5){
-      this.nombre = this.nombre + nombre;
-      this.pokemonApiUrl = 'https://pure-stream-21702.herokuapp.com/api/pokemons?page=' + this.nombre;
+    if(this.nombre2 + nombre >= 1 && this.nombre2 + nombre <= 40){
+      this.nombre2 = this.nombre2 + nombre;
+      this.pokemonApiUrl = 'https://pure-stream-21702.herokuapp.com/api/pokemons?page=' + this.nombre2;
       this.readApi(this.pokemonApiUrl)
       .subscribe((data : any) => {
           

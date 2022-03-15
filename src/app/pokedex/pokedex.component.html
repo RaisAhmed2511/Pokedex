@@ -1,5 +1,6 @@
 <h2>Pokédex</h2>
 <button (click)="page(-1)" class="switch" id="button_left"> &#60; </button>
+<p class="page">{{nombre}} / 41</p>
 <button (click)="page(1)" class="switch" id="button_right"> &#62; </button>
 <div class="search-box">
   <input type="text" class="input-search" [(ngModel)]="searchText" placeholder="Rechercher...">
