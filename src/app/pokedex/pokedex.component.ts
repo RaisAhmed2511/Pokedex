@@ -45,7 +45,7 @@ export class PokedexComponent implements OnInit {
   }
 
   page(nombre : number){
-    if(this.nombre + nombre >= 1 && this.nombre + nombre <= 5){
+    if(this.nombre + nombre >= 1 && this.nombre + nombre <= 40){
       this.nombre = this.nombre + nombre;
       this.pokemonApiUrl = 'https://pure-stream-21702.herokuapp.com/api/pokemons?page=' + this.nombre;
       this.readApi(this.pokemonApiUrl)
@@ -63,6 +63,8 @@ export class PokedexComponent implements OnInit {
         this.pokemonData.nom = data['name'];
         this.pokemonData.type1 = data['type_1']*/
       });
+
+  
     }
 
     

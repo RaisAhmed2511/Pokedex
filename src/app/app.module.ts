@@ -18,6 +18,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { ComparaisonComponent } from './comparaison/comparaison.component';
 import { FooterComponent } from './footer/footer.component';
+import { CreationComponent } from './creation/creation.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
     AccueilComponent,
     NavbarComponent,
     ComparaisonComponent,
-    FooterComponent
+    FooterComponent,
+    CreationComponent
     
   ],
   imports: [
