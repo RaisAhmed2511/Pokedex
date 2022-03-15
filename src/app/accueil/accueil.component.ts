@@ -24,7 +24,7 @@ import { Component, OnInit } from '@angular/core';
   // ]
 })
 export class AccueilComponent implements OnInit {
-
+  title : String = 'PokeSite'
   constructor() { 
   }
 

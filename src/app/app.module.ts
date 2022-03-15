@@ -19,6 +19,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { ComparaisonComponent } from './comparaison/comparaison.component';
 import { FooterComponent } from './footer/footer.component';
 import { CreationComponent } from './creation/creation.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CreationComponent } from './creation/creation.component';
     NavbarComponent,
     ComparaisonComponent,
     FooterComponent,
-    CreationComponent
+    CreationComponent,
+    ContactComponent
     
   ],
   imports: [
