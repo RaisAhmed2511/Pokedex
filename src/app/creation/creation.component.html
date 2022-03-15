@@ -1,0 +1,39 @@
+<div id="tout">
+    <p id="nomCreer">Créer un Pokémon</p>
+    <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+        <div class="stats">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" ngModel>
+            <label for="health_points">PV</label>
+            <input type="text" id="health_points" name="health_points" ngModel>
+        </div>
+        <div class="stats">
+            <label for="type_1">Type 1</label>
+            <input type="text" id="type_1" name="type_1" ngModel>
+            <label for="name">Type 2</label>
+            <input type="type_2" id="type_2" name="type_2" ngModel>
+        </div>
+        <div class="stats">
+            <label for="attack_points">Attaque</label>
+            <input type="text" id="attack_points" name="attack_points" ngModel>
+            <label for="defense_points">Defense</label>
+            <input type="text" id="defense_points" name="defense_points" ngModel>
+            <label for="speed_points">Vitesse</label>
+            <input type="text" id="speed_points" name="speed_points" ngModel>
+        </div>
+        <div class="legendaire">
+            <label for="legendary">Legendaire </label>
+            <label for="legendary">Oui</label>
+            <input type="radio" id="legendary" name="legendary" value="true" ngModel>
+            <label for="legendary">Non</label>
+            <input type="radio" id="legendary" name="legendary" value="false" ngModel>
+        </div> 
+        <div class="stats">
+            <label for="generation">Generation</label>
+            <input type="number" min="1" max="7" id="generation" name="generation" ngModel>
+        </div>
+        <div class="champs">
+            <button type="submit" id="submit">Envoyer</button>
+        </div>
+    </form>
+</div>
