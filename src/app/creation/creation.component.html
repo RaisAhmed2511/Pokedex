@@ -21,14 +21,24 @@
             <label for="speed_points">Vitesse</label>
             <input type="text" id="speed_points" name="speed_points" ngModel>
         </div>
+        <div class="stats">
+            <label for="special_attack_points">Attaque Spéciale</label>
+            <input type="text" id="special_attack_points" name="special_attack_points" ngModel>
+            <label for="special_defense_points">Defense Spécial</label>
+            <input type="text" id="special_defense_points" name="special_defense_points" ngModel>
+            <label for="total_points">EXP</label>
+            <input type="text" id="total_points" name="total_points" ngModel>
+        </div>
         <div class="legendaire">
             <label for="legendary">Legendaire </label>
             <label for="legendary">Oui</label>
-            <input type="radio" id="legendary" name="legendary" value="true" ngModel>
+            <input type="radio" id="legendary" name="legendary" value="1" ngModel>
             <label for="legendary">Non</label>
-            <input type="radio" id="legendary" name="legendary" value="false" ngModel>
+            <input type="radio" id="legendary" name="legendary" value="0" ngModel>
         </div> 
         <div class="stats">
+            <label for="number">Après quel indice de pokemon ? </label>
+            <input type="text" id="number" name="number" ngModel>
             <label for="generation">Generation</label>
             <input type="number" min="1" max="7" id="generation" name="generation" ngModel>
         </div>
