@@ -10,16 +10,30 @@
     text-align: center;
     max-width: 100%;
     height: auto;
+    transition: transform .5s ease;
 }
-.simia{
-    max-width: 100%;
-    height: auto;
+.ronflex:hover{
+    filter: hue-rotate(50deg);
+    transform: scale(1.2);
 }
 .github{
     height: 50px;
+    padding-right: 2%;
+    transition: transform .5s ease-in-out;
+
+}
+.github:hover{
+    transform: scale(1.4) rotate(360deg);
+    filter: invert(100%);
+
+}
+.msg:hover{
+    transform: scale(1.4) rotate(360deg);
+    filter: invert(100%);
 }
 .msg{
     height: 50px;
+    transition: transform .5s ease-in-out;
 }
 .julien{
     width: 40%;
@@ -82,4 +96,7 @@ h1{
 }
 .aboutButton:hover{
     background-color: green;
+}
+.ici {
+    color: steelblue;
 }
