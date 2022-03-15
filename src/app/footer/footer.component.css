@@ -1,12 +1,20 @@
 .footer{
-    
     background: linear-gradient(#fb5283,#ff3527);
     width: 100%;
     overflow-x:hidden;
     margin: 0;
     padding: 0;
 }
-
-.footer p {
+.footer h1{
+    text-align: center;
+    
+}
+.div1 {
+    padding-top: 2%;
+    margin: auto;
+    border-bottom: 2px solid black;
+    width: 50%;
+}
+.footer h2 {
     text-align: center;
 }
